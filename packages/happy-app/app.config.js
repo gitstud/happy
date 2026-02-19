@@ -5,9 +5,9 @@ const name = {
     production: "Happy"
 }[variant];
 const bundleId = {
-    development: "com.slopus.happy.dev",
-    preview: "com.slopus.happy.preview",
-    production: "com.ex3ndr.happy"
+    development: "com.maxwell.happy.dev",
+    preview: "com.maxwell.happy.preview",
+    production: "com.maxwell.happy"
 }[variant];
 
 export default {
@@ -150,7 +150,6 @@ export default {
             ]
         ],
         updates: {
-            url: "https://u.expo.dev/4558dd3d-cd5a-47cd-bad9-e591a241cc06",
             requestHeaders: {
                 "expo-channel-name": "production"
             }
@@ -159,11 +158,11 @@ export default {
             typedRoutes: true
         },
         extra: {
+            eas: {
+                projectId: "ce6728b1-aa83-43c2-9dfb-f0b761b29eb0"
+            },
             router: {
                 root: "./sources/app"
-            },
-            eas: {
-                projectId: "4558dd3d-cd5a-47cd-bad9-e591a241cc06"
             },
             app: {
                 postHogKey: process.env.EXPO_PUBLIC_POSTHOG_API_KEY,
@@ -172,6 +171,6 @@ export default {
                 revenueCatStripeKey: process.env.EXPO_PUBLIC_REVENUE_CAT_STRIPE
             }
         },
-        owner: "bulkacorp"
+        owner: "gitstud"
     }
 };
